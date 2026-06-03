@@ -1,0 +1,89 @@
+.hero{
+    height:500px;
+    background:
+        linear-gradient(rgba(10,15,44,.5),
+        rgba(10,15,44,.5)),
+        url("../img/Banner.png");
+
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:110%;
+    animation:zoomBanner 20s ease-in-out infinite alternate;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+@keyframes zoomBanner{
+    from{
+        background-size:100%;
+    }
+    to{
+        background-size:112%;
+    }
+}
+
+.overlay{
+    text-align:center;
+}
+
+.overlay h1{
+    font-size:4rem;
+    color:white;
+}
+
+.overlay p{
+    font-size:1.3rem;
+    color:#c7d2fe;
+}
+
+/* tarjetas conferencias */
+.cards-conferencias{
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.conference-card{
+    flex:1;
+    display:flex;
+    flex-direction:column;
+    background:rgba(255,255,255,.05);
+    border-radius:15px;
+    overflow:hidden;
+    border:1px solid rgba(255,255,255,.08);
+    transition: all .3s ease;
+    flex-grow: 1;
+}
+.cards-conferencias {
+    display: flex;
+    gap: 20px;
+    margin-top: 25px;
+    flex-wrap: wrap;
+}
+.conference-card:hover {
+    transform: translateY(-6px);
+    border-color: #7dd3fc;
+}
+
+.conference-card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+.conference-card h3 {
+    padding: 15px;
+    color: #7dd3fc;
+}
+
+
+.btn-glosario{
+    display:inline-block;
+    margin-top:15px;
+    padding:10px 20px;
+    background:linear-gradient(135deg,#3b82f6,#7dd3fc);
+    color:white;
+    text-decoration:none;
+    border-radius:8px;
+}

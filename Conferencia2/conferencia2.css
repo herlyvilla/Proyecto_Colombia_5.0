@@ -1,0 +1,134 @@
+.hero-small {
+    height: 260px;
+    background:
+        linear-gradient(rgba(10, 15, 44, 0.5),
+            rgba(10, 15, 44, 0.5)),
+        url("../img/banner2.png");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+.hero-small::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+/* contenido */
+.hero-content {
+    position: relative;
+    z-index: 2;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero-content h1 {
+    color: #7dd3fc;
+    font-size: 3rem;
+    letter-spacing: 2px;
+    text-shadow: 0 4px 20px rgba(0,0,0,.5);
+}
+
+.hero-content p {
+    color: #eff1f2;
+    font-size: 1.1rem;
+}
+
+/* carrusel */
+
+.carousel img {
+    width: 350px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 12px;
+    scroll-snap-align: center;
+   
+}
+/* carrusel */
+.carousel {
+    display: flex;
+    overflow-x: auto;
+    gap: 15px;
+    margin: 20px 0;
+    scroll-snap-type: x mandatory;
+
+    scroll-behavior: smooth;
+
+    /* Firefox */
+    scrollbar-width: thin;
+    scrollbar-color: rgba(255, 255, 255, 0.35) rgba(255, 255, 255, 0.08);
+}
+
+/* Chrome, Edge, Safari */
+.carousel::-webkit-scrollbar {
+    height: 8px; /* grosor horizontal */
+}
+
+.carousel::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 10px;
+}
+
+.carousel::-webkit-scrollbar-thumb {
+    background: rgba(125, 211, 252, 0.5); /* azul transparente */
+    border-radius: 10px;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+}
+
+.carousel::-webkit-scrollbar-thumb:hover {
+    background: rgba(125, 211, 252, 0.8);
+}
+
+.carousel-item img,
+.carousel-item video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* CLAVE: recorta bonito sin deformar */
+
+    border-radius: 16px; /* asegura consistencia visual */
+}
+
+.carousel-item {
+    flex: 0 0 auto;
+    width: 350px;
+    height: 210px;
+
+    border-radius: 16px;
+    overflow: hidden;
+
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    scroll-snap-align: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* boton */
+.btn-inicio {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+
+    background: linear-gradient(135deg, #3b82f6, #7dd3fc);
+    color: white;
+
+    text-decoration: none;
+    border-radius: 8px;
+
+    transition: .3s;
+}
+
+.btn-inicio:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
+}

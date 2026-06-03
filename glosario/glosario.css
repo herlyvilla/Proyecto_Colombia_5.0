@@ -1,0 +1,150 @@
+
+.hero-small {
+    height: 260px;
+
+    background:
+        linear-gradient(rgba(10, 15, 44, 0.5),
+            rgba(10, 15, 44, 0.5)),
+        url("../img/banner2.png");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+.hero-small::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+/* contenido */
+.hero-content {
+    position: relative;
+    z-index: 2;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero-small h1 {
+    color: #7dd3fc;
+    font-size: 3rem;
+    letter-spacing: 2px;
+    text-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.hero-content p {
+    color: #eff1f2;
+    font-size: 1.1rem;
+}
+
+/* ===== CONTENEDOR ===== */
+.container-glosario {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+/* ===== TABLA  ===== */
+.container-glosario table {
+    width: 100%;
+    border-collapse: collapse;
+    background: rgba(6, 35, 107, 0.45);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* CABECERA */
+.container-glosario th {
+    background: rgba(4, 22, 68, 0.9);
+    color: #7dd3fc;
+    padding: 16px;
+    text-align: left;
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+
+/* CELDAS */
+.container-glosario td {
+    padding: 14px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    line-height: 1.6;
+    color: #EAEAF0;
+}
+
+/* FILAS ALTERNADAS */
+.container-glosario tr:nth-child(even) {
+    background: rgba(255, 255, 255, 0.03);
+}
+
+/* HOVER */
+.container-glosario tr:hover {
+    background: rgba(70, 173, 234, 0.12);
+    transition: 0.3s;
+}
+
+/* NUMERACIÓN */
+.container-glosario td:first-child {
+    font-weight: bold;
+    color: #7dd3fc;
+    text-align: center;
+    width: 60px;
+}
+
+/* INGLÉS */
+.container-glosario td:nth-child(2) {
+    font-weight: 600;
+    color: #7dd3fc;
+}
+
+/* ESPAÑOL */
+.container-glosario td:nth-child(3) {
+    font-weight: 600;
+    color: #fbfbfb;
+}
+
+/* ===== BOTONES ===== */
+.btn-glosario {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+
+    background: linear-gradient(135deg, #3b82f6, #7dd3fc);
+    color: white;
+
+    text-decoration: none;
+    border-radius: 8px;
+
+    transition: .3s;
+}
+
+.btn-glosario:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
+}
+
+
+/* ===== RESPONSIVE ===== */
+@media(max-width:768px) {
+
+    .hero-small h1 {
+        font-size: 2rem;
+    }
+
+    .container-glosario {
+        overflow-x: auto;
+    }
+
+    .container-glosario table {
+        min-width: 800px;
+    }
+}
