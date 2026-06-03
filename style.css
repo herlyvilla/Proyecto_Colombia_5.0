@@ -3,7 +3,7 @@
     background:
         linear-gradient(rgba(10,15,44,.5),
         rgba(10,15,44,.5)),
-        url("../img/Banner.png");
+        url("img/Banner.png");
 
     background-position:center;
     background-repeat:no-repeat;
