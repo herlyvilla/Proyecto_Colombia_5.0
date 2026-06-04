@@ -87,3 +87,26 @@
     text-decoration:none;
     border-radius:8px;
 }
+
+
+.lang-container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(255,255,255,0.08);
+    padding: 8px 12px;
+    border-radius: 30px;
+    border: 1px solid rgba(79,195,247,.4);
+}
+
+#language-selector {
+    background: transparent;
+    border: none;
+    color: white;
+    outline: none;
+    cursor: pointer;
+}
+
+#language-selector option {
+    color: black;
+}

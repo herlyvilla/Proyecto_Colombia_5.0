@@ -14,18 +14,26 @@
 
     <header class="hero">
         <div class="overlay">
-            <h1>Colombia 5.0</h1>
-            <p>Innovación, Tecnología y Transformación Digital</p>
+            <h1 id="main-title">Colombia 5.0</h1>
+            <p data-translate="heroSubtitle">Innovación, Tecnología y Transformación Digital</p>
         </div>
     </header>
 
     <nav>
         <ul>
-            <li><a href="#que-es">Inicio</a></li>
-            <li><a href="#experiencia">Experiencia</a></li>
-            <li><a href="#conferencias">Conferencias</a></li>
-            <li><a href="#glosario">Glosario</a></li>
-            <li><a href="#conclusion">Conclusión</a></li>
+            <li><a href="#que-es" data-translate="navHome">Inicio</a></li>
+            <li><a href="#experiencia" data-translate="navExperience">Experiencia</a></li>
+            <li><a href="#conferencias" data-translate="navConferences">Conferencias</a></li>
+            <li><a href="#glosario" data-translate="navGlossary">Glosario</a></li>
+            <li><a href="#conclusion" data-translate="navConclusion">Conclusión</a></li>
+
+            <div class="lang-container">
+                🌐
+                <select id="language-selector">
+                    <option value="es">Español</option>
+                    <option value="en">English</option>
+                </select>
+            </div>
         </ul>
     </nav>
 
@@ -34,8 +42,8 @@
         <main>
             <!-- QUE ES / INTRODUCCION SITIO WEB-->
             <section id="que-es" class="card">
-                <h2>¿Qué es Colombia 5.0?</h2>
-                <p>
+                <h2 data-translate="whatIsTitle">¿Qué es Colombia 5.0?</h2>
+                <p data-translate="whatIsText">
                     Colombia 5.0 es una iniciativa que busca impulsar la transformación digital del país mediante el uso
                     de nuevas tecnologías e innovación. Este espacio reúne a estudiantes, emprendedores, empresas y
                     expertos para compartir conocimientos y experiencias relacionadas con temas como la inteligencia
@@ -52,8 +60,8 @@
 
             <!-- OBJETIVO DEL SITIO -->
             <section class="card">
-                <h2>Objetivo del Sitio</h2>
-                <p>
+                <h2 data-translate="objectiveTitle">Objetivo del Sitio</h2>
+                <p data-translate="objectiveText">
                     El objetivo de este sitio web es presentar información sobre Colombia 5.0, un evento enfocado en la
                     innovación, la tecnología y la transformación digital en el país. A través de esta página se busca
                     compartir los principales temas abordados durante el evento, las conferencias a las que asistí y los
@@ -64,8 +72,8 @@
             </section>
             <!-- EXPERIENCIA -->
             <section id="experiencia" class="card">
-                <h2>Mi Experiencia</h2>
-                <p>
+                <h2 data-translate="experienceTitle">Mi Experiencia</h2>
+                <p data-translate="experienceText">
                     Participar en Colombia 5.0 fue una experiencia muy enriquecedora, ya que tuve la oportunidad de
                     conocer de cerca algunas de las tecnologías que están transformando el mundo actual. Durante las
                     conferencias y actividades aprendí sobre temas como la inteligencia artificial, la innovación
@@ -89,20 +97,20 @@
 
             <!-- CONFERENCIAS -->
             <section id="conferencias" class="card">
-                <h2>Conferencias</h2>
+                <h2 data-translate="conferenceSectionTitle">Conferencias</h2>
                 <div class="cards-conferencias">
                     <!-- Tarjeta 1 -->
                     <div class="conference-card">
                         <img src="img/conferencista1.png" alt="Conferencia 1">
-                        <h3>
+                        <h3 data-translate="conference1Title">
                             Inteligencia Artificial en Videovigilancia
                         </h3>
-                        <p>
+                        <p data-translate="conference1Text">
                             Aplicación de inteligencia artificial para
                             mejorar los sistemas de vigilancia y la
                             toma de decisiones en tiempo real.
                         </p>
-                        <a href="Conferencia1/conferencia1.html" class="btn-glosario">
+                        <a href="Conferencia1/conferencia1.html" class="btn-glosario" data-translate="readMore">
                             Leer más →
                         </a>
                     </div>
@@ -110,15 +118,15 @@
                     <!-- Tarjeta 2 -->
                     <div class="conference-card">
                         <img src="img/conferencista2.png" alt="Conferencia 2">
-                        <h3>
+                        <h3 data-translate="conference2Title">
                             IA en Marketing y Negocios
                         </h3>
-                        <p>
+                        <p data-translate="conference2Text">
                             Uso de inteligencia artificial generativa
                             para optimizar procesos y crear contenido
                             digital de manera eficiente.
                         </p>
-                        <a href="Conferencia2/conferencia2.html" class="btn-glosario">
+                        <a href="Conferencia2/conferencia2.html" class="btn-glosario" data-translate="readMore">
                             Leer más →
                         </a>
                     </div>
@@ -127,9 +135,9 @@
 
             <!-- GLOSARIO -->
             <section id="glosario" class="card">
-                <h2>Glosario Técnico</h2>
+                <h2 data-translate="glossaryTitle">Glosario Técnico</h2>
 
-                <p>
+                <p data-translate="glossaryText">
                     Como parte de las conferencias y actividades desarrolladas en Colombia 5.0, se presentaron diversos
                     conceptos fundamentales relacionados con la inteligencia artificial, la videovigilancia, el
                     marketing digital y la transformación digital. Estos temas permitieron comprender el impacto de las
@@ -139,16 +147,16 @@
                     definiciones y traducciones al inglés.
                 </p>
 
-                <a href="glosario/glosario.html" class="btn-glosario">
+                <a href="glosario/glosario.html" class="btn-glosario" data-translate="viewGlossary">
                     Ver Glosario Completo →
                 </a>
             </section>
 
             <!-- CONCLUSION -->
             <section id="conclusion" class="card">
-                <h2>Conclusión y Reflexión Ética</h2>
+                <h2 data-translate="conclusionTitle">Conclusión y Reflexión Ética</h2>
 
-                <p>
+                <p data-translate="conclusionText1">
                     La experiencia en Colombia 5.0 permitió comprender el impacto
                     de la transformación digital y el papel de tecnologías como la
                     inteligencia artificial en distintos sectores.Las
@@ -156,7 +164,7 @@
                     innovación en las organizaciones.
                 </p>
 
-                <p>
+                <p data-translate="conclusionText2">
                     La ética en la tecnología empresarial se implementa mediante el uso responsable de la inteligencia
                     artificial, la protección adecuada de los datos y una automatización orientada a apoyar y optimizar
                     el
@@ -172,7 +180,7 @@
     <footer>
         <p>Colombia 5.0 - Herly Johana Villamizar Carreño</p>
     </footer>
-
+    <script src="idiomas.js"></script>
 </body>
 
 </html>
