@@ -16,6 +16,8 @@ nav{
     backdrop-filter:blur(10px);
     position:sticky;
     top:0;
+    z-index: 9999;
+
 }
 
 nav ul{
@@ -42,6 +44,7 @@ nav a:hover{
     max-width:1200px;
     margin:auto;
     padding:30px;
+    position: relative;
 }
 
 /* CARDS */

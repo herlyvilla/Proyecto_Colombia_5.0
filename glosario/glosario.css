@@ -148,3 +148,26 @@
         min-width: 800px;
     }
 }
+
+.lang-container {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    z-index: 10;
+}
+
+#language-selector {
+    background: transparent;
+    border: none;
+    color: white;
+    outline: none;
+    cursor: pointer;
+}
+
+#language-selector option {
+    color: black;
+}

@@ -5,15 +5,21 @@
     <meta charset="UTF-8">
     <title>Glosario Técnico</title>
     <link rel="stylesheet" href="../main.css">
-<link rel="stylesheet" href="glosario.css">
+    <link rel="stylesheet" href="glosario.css">
 </head>
 
 <body>
-
     <header class="hero-small">
+        <div class="lang-container">
+            🌐
+            <select id="language-selector">
+                <option value="es">Español</option>
+                <option value="en">English</option>
+            </select>
+        </div>
         <div class="hero-content">
-            <h1>Glosario Técnico</h1>
-            <p>Conceptos aprendidos durante Colombia 5.0</p>
+            <h1 data-translate="glossaryPageTitle">Glosario Técnico</h1>
+            <p data-translate="glossaryPageSubtitle">Conceptos aprendidos durante Colombia 5.0</p>
         </div>
     </header>
 
@@ -22,16 +28,17 @@
         <table>
             <tr>
                 <th></th>
-                <th>Inglés</th>
-                <th>Español</th>
-                <th>Descripción</th>
+                <th data-translate="tableEnglish">Inglés</th>
+                <th data-translate="tableSpanish">Español</th>
+                <th data-translate="tableDescription">Descripción</th>
             </tr>
             <!-- Concepto 1 -->
             <tr>
                 <td>1</td>
                 <td>Artificial Intelligence</td>
                 <td>Inteligencia Artificial</td>
-                <td>Tecnología que permite a las máquinas realizar tareas que normalmente requieren inteligencia
+                <td data-translate="concept1">Tecnología que permite a las máquinas realizar tareas que normalmente
+                    requieren inteligencia
                     humana.</td>
             </tr>
             <!-- Concepto 2 -->
@@ -39,14 +46,16 @@
                 <td>2</td>
                 <td>Video Surveillance</td>
                 <td>Videovigilancia</td>
-                <td>Sistema de monitoreo mediante cámaras para supervisar espacios y mejorar la seguridad.</td>
+                <td data-translate="concept2">Sistema de monitoreo mediante cámaras para supervisar espacios y mejorar
+                    la seguridad.</td>
             </tr>
             <!-- Concepto 3 -->
             <tr>
                 <td>3</td>
                 <td>Cloud7</td>
                 <td>Cloud7</td>
-                <td>Plataforma tecnológica que integra inteligencia artificial para el análisis de video y la
+                <td data-translate="concept3">Plataforma tecnológica que integra inteligencia artificial para el
+                    análisis de video y la
                     toma de decisiones en seguridad.</td>
             </tr>
             <!-- Concepto 4 -->
@@ -54,198 +63,220 @@
                 <td>4</td>
                 <td>Omnilink7</td>
                 <td>Omnilink7</td>
-                <td>Dispositivo capaz de conectar múltiples cámaras y generar alertas inteligentes.</td>
+                <td data-translate="concept4">Dispositivo capaz de conectar múltiples cámaras y generar alertas
+                    inteligentes.</td>
             </tr>
             <!-- Concepto 5 -->
             <tr>
                 <td>5</td>
                 <td>Data Analysis</td>
                 <td>Análisis de Datos</td>
-                <td>Proceso de examinar información para obtener conclusiones útiles.</td>
+                <td data-translate="concept5">Proceso de examinar información para obtener conclusiones útiles.</td>
             </tr>
             <!-- Concepto 6 -->
             <tr>
                 <td>6</td>
                 <td>Decision Making</td>
                 <td>Toma de decisiones</td>
-                <td>Proceso de seleccionar la mejor acción a partir de datos y análisis.</td>
+                <td data-translate="concept6">Proceso de seleccionar la mejor acción a partir de datos y análisis.</td>
             </tr>
             <!-- Concepto 7 -->
             <tr>
                 <td>7</td>
                 <td>Person Detection</td>
                 <td>Detección de Personas</td>
-                <td>Identificación automática de personas mediante algoritmos de visión artificial.</td>
+                <td data-translate="concept7">Identificación automática de personas mediante algoritmos de visión
+                    artificial.</td>
             </tr>
             <!-- Concepto 8 -->
             <tr>
                 <td>8</td>
                 <td>Crowd Counting</td>
                 <td>Conteo de multitudes</td>
-                <td>Tecnología que permite calcular el número de personas en un área determinada.</td>
+                <td data-translate="concept8">Tecnología que permite calcular el número de personas en un área
+                    determinada.</td>
             </tr>
             <!-- Concepto 9 -->
             <tr>
                 <td>9</td>
                 <td>Automatic License Plate Recognition (ALPR)</td>
                 <td>Reconocimiento de placas</td>
-                <td>Sistema que identifica matrículas vehiculares de manera automática.</td>
+                <td data-translate="concept9">Sistema que identifica matrículas vehiculares de manera automática.</td>
             </tr>
             <!-- Concepto 10 -->
             <tr>
                 <td>10</td>
                 <td>Anomalous Behaviors</td>
                 <td>Comportamientos Anómalos</td>
-                <td>Acciones inusuales que pueden representar riesgos o incidentes.</td>
+                <td data-translate="concept10">Acciones inusuales que pueden representar riesgos o incidentes.</td>
             </tr>
             <!-- Concepto 11 -->
             <tr>
                 <td>11</td>
                 <td>YOLO (You Only Look Once)</td>
                 <td>YOLO</td>
-                <td>Biblioteca de visión por computadora utilizada para detectar objetos en tiempo real.</td>
+                <td data-translate="concept11">Biblioteca de visión por computadora utilizada para detectar objetos en
+                    tiempo real.</td>
             </tr>
             <!-- Concepto 12 -->
             <tr>
                 <td>12</td>
                 <td>Convolutional Neural Network (CNN)</td>
                 <td>CNN</td>
-                <td>Tipo de red neuronal especializada en el procesamiento de imágenes y videos.</td>
+                <td data-translate="concept12">Tipo de red neuronal especializada en el procesamiento de imágenes y
+                    videos.</td>
             </tr>
             <!-- Concepto 13 -->
             <tr>
                 <td>13</td>
                 <td>Graphics Processing Unit (GPU)</td>
                 <td>GPU</td>
-                <td>Procesador diseñado para acelerar tareas gráficas y de inteligencia artificial.</td>
+                <td data-translate="concept13">Procesador diseñado para acelerar tareas gráficas y de inteligencia
+                    artificial.</td>
             </tr>
             <!-- Concepto 14 -->
             <tr>
                 <td>14</td>
                 <td>Heat Map</td>
                 <td>Mapa de Calor</td>
-                <td>Representación visual que muestra zonas con mayor actividad o concentración.</td>
+                <td data-translate="concept14">Representación visual que muestra zonas con mayor actividad o
+                    concentración.</td>
             </tr>
             <!-- Concepto 15 -->
             <tr>
                 <td>15</td>
                 <td>Disaster Prevention</td>
                 <td>Prevención de Desastres</td>
-                <td>Estrategias y tecnologías destinadas a reducir riesgos ante emergencias.Estrategias y tecnologías destinadas a reducir riesgos ante emergencias.</td>
+                <td data-translate="concept15">Estrategias y tecnologías destinadas a reducir riesgos ante
+                    emergencias.Estrategias y tecnologías
+                    destinadas a reducir riesgos ante emergencias.</td>
             </tr>
             <!-- Concepto 16 -->
             <tr>
                 <td>16</td>
                 <td>Safe Zone</td>
                 <td>Zona Segura</td>
-                <td>Área monitoreada constantemente mediante sistemas inteligentes de vigilancia</td>
+                <td data-translate="concept16">Área monitoreada constantemente mediante sistemas inteligentes de
+                    vigilancia</td>
             </tr>
             <!-- Concepto 17 -->
             <tr>
                 <td>17</td>
                 <td>Database</td>
                 <td>Base de Datos</td>
-                <td>Conjunto organizado de información almacenada digitalmente.</td>
+                <td data-translate="concept17">Conjunto organizado de información almacenada digitalmente.</td>
             </tr>
             <!-- Concepto 18 -->
             <tr>
                 <td>18</td>
                 <td>Color Classification</td>
                 <td>Clasificación por Colores</td>
-                <td>Técnica utilizada para identificar y categorizar elementos según sus colores.</td>
+                <td data-translate="concept18">Técnica utilizada para identificar y categorizar elementos según sus
+                    colores.</td>
             </tr>
             <!-- Concepto 19 -->
             <tr>
                 <td>19</td>
                 <td>Common Objects in Context (COCO)</td>
                 <td>COCO</td>
-                <td>Conjunto de datos ampliamente utilizado para entrenar modelos de visión artificial.</td>
+                <td data-translate="concept19">Conjunto de datos ampliamente utilizado para entrenar modelos de visión
+                    artificial.</td>
             </tr>
             <!-- Concepto 20 -->
             <tr>
                 <td>20</td>
                 <td>Systems Integration</td>
                 <td>Integración de Sistemas</td>
-                <td>Proceso de conectar diferentes tecnologías para que funcionen conjuntamente.</td>
+                <td data-translate="concept20">Proceso de conectar diferentes tecnologías para que funcionen
+                    conjuntamente.</td>
             </tr>
             <!-- Concepto 21 -->
             <tr>
                 <td>21</td>
                 <td>General AI</td>
                 <td>IA General</td>
-                <td>Tipo de inteligencia artificial capaz de realizar diversas tareas similares a las humanas.</td>
+                <td data-translate="concept21">Tipo de inteligencia artificial capaz de realizar diversas tareas
+                    similares a las humanas.</td>
             </tr>
             <!-- Concepto 22 -->
             <tr>
                 <td>22</td>
                 <td>Generative AI</td>
                 <td>IA Generativa</td>
-                <td>Inteligencia artificial capaz de crear contenido como texto, imágenes o videos.</td>
+                <td data-translate="concept22">Inteligencia artificial capaz de crear contenido como texto, imágenes o
+                    videos.</td>
             </tr>
             <!-- Concepto 23 -->
             <tr>
                 <td>23</td>
                 <td>Digital Marketing</td>
                 <td>Marketing Digital</td>
-                <td>Estrategias de promoción y comunicación realizadas a través de medios digitales.</td>
+                <td data-translate="concept23">Estrategias de promoción y comunicación realizadas a través de medios
+                    digitales.</td>
             </tr>
             <!-- Concepto 24 -->
             <tr>
                 <td>24</td>
                 <td>Social Media</td>
                 <td>Redes Sociales</td>
-                <td>Plataformas digitales utilizadas para compartir contenido e interactuar con usuarios.</td>
+                <td data-translate="concept24">Plataformas digitales utilizadas para compartir contenido e interactuar
+                    con usuarios.</td>
             </tr>
             <!-- Concepto 25 -->
             <tr>
                 <td>25</td>
                 <td>Automation</td>
                 <td>Automatización</td>
-                <td>Uso de tecnología para ejecutar tareas con mínima intervención humana.</td>
+                <td data-translate="concept25">Uso de tecnología para ejecutar tareas con mínima intervención humana.
+                </td>
             </tr>
             <!-- Concepto 26 -->
             <tr>
                 <td>26</td>
                 <td>Digital Transformation</td>
                 <td>Transformación Digital</td>
-                <td>Incorporación de tecnologías digitales para mejorar procesos y servicios.</td>
+                <td data-translate="concept26">Incorporación de tecnologías digitales para mejorar procesos y servicios.
+                </td>
             </tr>
             <!-- Concepto 27 -->
             <tr>
                 <td>27</td>
                 <td>Innovation</td>
                 <td>Innovación</td>
-                <td>Desarrollo de nuevas ideas, productos o procesos que generan valor.</td>
+                <td data-translate="concept27">Desarrollo de nuevas ideas, productos o procesos que generan valor.</td>
             </tr>
             <!-- Concepto 28 -->
             <tr>
                 <td>28</td>
                 <td>Digital Content</td>
                 <td>Contenido Digital</td>
-                <td>Material creado y distribuido en formato digital, como imágenes, videos y publicaciones.</td>
+                <td data-translate="concept28">Material creado y distribuido en formato digital, como imágenes, videos y
+                    publicaciones.</td>
             </tr>
             <!-- Concepto 29 -->
             <tr>
                 <td>29</td>
                 <td>Smart Security</td>
                 <td>Seguridad Inteligente</td>
-                <td>Aplicación de tecnologías avanzadas para mejorar la protección de personas y bienes</td>
+                <td data-translate="concept29">Aplicación de tecnologías avanzadas para mejorar la protección de
+                    personas y bienes</td>
             </tr>
             <!-- Concepto 15 -->
             <tr>
                 <td>30</td>
                 <td>Response Time</td>
                 <td>Tiempo de Respuesta</td>
-                <td>Período que transcurre entre la detección de un incidente y la acción tomada.</td>
+                <td data-translate="concept30">Período que transcurre entre la detección de un incidente y la acción
+                    tomada.</td>
             </tr>
         </table>
 
-        <a href="../index.html" class="btn-glosario">
+        <a href="../index.html" class="btn-glosario" data-translate="backHome">
             ← Volver al inicio
         </a>
 
     </div>
-
+    <script src="../idiomas.js"></script>
 </body>
 
 </html>

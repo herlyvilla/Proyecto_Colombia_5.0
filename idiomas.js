@@ -23,7 +23,8 @@ const translations = {
             "Innovación, Tecnología y Transformación Digital",
 
         navHome:
-            "Inicio",
+            "¿Que es?",
+        navHome1: "Inicio",
 
         navExperience:
             "Experiencia",
@@ -92,7 +93,79 @@ const translations = {
             `La ética en la tecnología empresarial se implementa mediante el uso responsable de la inteligencia artificial, la protección adecuada de los datos y una automatización orientada a apoyar y optimizar el trabajo humano. Por ello, es fundamental que las empresas utilicen estas tecnologías de manera transparente y responsable, garantizando el respeto por la privacidad, la equidad y el bienestar de la sociedad.`,
 
         footerText:
-            "Colombia 5.0 - Herly Johana Villamizar Carreño"
+            "Colombia 5.0 - Herly Johana Villamizar Carreño",
+
+        glossaryPageTitle: "Glosario Técnico",
+
+        glossaryPageSubtitle:
+            "Conceptos aprendidos durante Colombia 5.0",
+
+        tableEnglish: "Inglés",
+
+        tableSpanish: "Español",
+
+        tableDescription: "Descripción",
+
+        backHome: "← Volver al inicio",
+        concept1: "Tecnología que permite a las máquinas realizar tareas que normalmente requieren inteligencia humana.",
+
+        concept2: "Sistema de monitoreo mediante cámaras para supervisar espacios y mejorar la seguridad.",
+
+        concept3: "Plataforma tecnológica que integra inteligencia artificial para el análisis de video y la toma de decisiones en seguridad.",
+
+        concept4: "Dispositivo capaz de conectar múltiples cámaras y generar alertas inteligentes.",
+
+        concept5: "Proceso de examinar información para obtener conclusiones útiles.",
+
+        concept6: "Proceso de seleccionar la mejor acción a partir de datos y análisis.",
+
+        concept7: "Identificación automática de personas mediante algoritmos de visión artificial.",
+
+        concept8: "Tecnología que permite calcular el número de personas en un área determinada.",
+
+        concept9: "Sistema que identifica matrículas vehiculares de manera automática.",
+
+        concept10: "Acciones inusuales que pueden representar riesgos o incidentes.",
+
+        concept11: "Biblioteca de visión por computadora utilizada para detectar objetos en tiempo real.",
+
+        concept12: "Tipo de red neuronal especializada en el procesamiento de imágenes y videos.",
+
+        concept13: "Procesador diseñado para acelerar tareas gráficas y de inteligencia artificial.",
+
+        concept14: "Representación visual que muestra zonas con mayor actividad o concentración.",
+
+        concept15: "Estrategias y tecnologías destinadas a reducir riesgos ante emergencias.",
+
+        concept16: "Área monitoreada constantemente mediante sistemas inteligentes de vigilancia.",
+
+        concept17: "Conjunto organizado de información almacenada digitalmente.",
+
+        concept18: "Técnica utilizada para identificar y categorizar elementos según sus colores.",
+
+        concept19: "Conjunto de datos ampliamente utilizado para entrenar modelos de visión artificial.",
+
+        concept20: "Proceso de conectar diferentes tecnologías para que funcionen conjuntamente.",
+
+        concept21: "Tipo de inteligencia artificial capaz de realizar diversas tareas similares a las humanas.",
+
+        concept22: "Inteligencia artificial capaz de crear contenido como texto, imágenes o videos.",
+
+        concept23: "Estrategias de promoción y comunicación realizadas a través de medios digitales.",
+
+        concept24: "Plataformas digitales utilizadas para compartir contenido e interactuar con usuarios.",
+
+        concept25: "Uso de tecnología para ejecutar tareas con mínima intervención humana.",
+
+        concept26: "Incorporación de tecnologías digitales para mejorar procesos y servicios.",
+
+        concept27: "Desarrollo de nuevas ideas, productos o procesos que generan valor.",
+
+        concept28: "Material creado y distribuido en formato digital, como imágenes, videos y publicaciones.",
+
+        concept29: "Aplicación de tecnologías avanzadas para mejorar la protección de personas y bienes.",
+
+        concept30: "Período que transcurre entre la detección de un incidente y la acción tomada."
     },
 
     en: {
@@ -101,8 +174,8 @@ const translations = {
             "Innovation, Technology and Digital Transformation",
 
         navHome:
-            "Home",
-
+            "What is it?",
+        navHome1: "Home",
         navExperience:
             "Experience",
 
@@ -170,7 +243,79 @@ const translations = {
             `Ethics in business technology is implemented through the responsible use of artificial intelligence, proper data protection, and automation aimed at supporting and optimizing human work. Therefore, it is essential for companies to use these technologies transparently and responsibly, ensuring respect for privacy, fairness, and social well-being.`,
 
         footerText:
-            "Colombia 5.0 - Herly Johana Villamizar Carreño"
+            "Colombia 5.0 - Herly Johana Villamizar Carreño",
+        glossaryPageTitle: "Technical Glossary",
+
+        glossaryPageSubtitle:
+            "Concepts learned during Colombia 5.0",
+
+        tableEnglish: "English",
+
+        tableSpanish: "Spanish",
+
+        tableDescription: "Description",
+
+        backHome: "← Back to Home",
+
+        concept1: "Technology that enables machines to perform tasks that normally require human intelligence.",
+
+        concept2: "Monitoring system using cameras to supervise spaces and improve security.",
+
+        concept3: "Technological platform that integrates artificial intelligence for video analysis and security decision-making.",
+
+        concept4: "Device capable of connecting multiple cameras and generating intelligent alerts.",
+
+        concept5: "Process of examining information to obtain useful conclusions.",
+
+        concept6: "Process of selecting the best course of action based on data and analysis.",
+
+        concept7: "Automatic identification of people through computer vision algorithms.",
+
+        concept8: "Technology that allows calculating the number of people in a specific area.",
+
+        concept9: "System that automatically identifies vehicle license plates.",
+
+        concept10: "Unusual actions that may represent risks or incidents.",
+
+        concept11: "Computer vision library used to detect objects in real time.",
+
+        concept12: "Type of neural network specialized in image and video processing.",
+
+        concept13: "Processor designed to accelerate graphics and artificial intelligence tasks.",
+
+        concept14: "Visual representation that shows areas with greater activity or concentration.",
+
+        concept15: "Strategies and technologies aimed at reducing risks during emergencies.",
+
+        concept16: "Area continuously monitored through intelligent surveillance systems.",
+
+        concept17: "Organized collection of information stored digitally.",
+
+        concept18: "Technique used to identify and categorize elements according to their colors.",
+
+        concept19: "Dataset widely used to train computer vision models.",
+
+        concept20: "Process of connecting different technologies so they can work together.",
+
+        concept21: "Type of artificial intelligence capable of performing a wide variety of human-like tasks.",
+
+        concept22: "Artificial intelligence capable of creating content such as text, images, or videos.",
+
+        concept23: "Promotion and communication strategies carried out through digital media.",
+
+        concept24: "Digital platforms used to share content and interact with users.",
+
+        concept25: "Use of technology to perform tasks with minimal human intervention.",
+
+        concept26: "Integration of digital technologies to improve processes and services.",
+
+        concept27: "Development of new ideas, products, or processes that create value.",
+
+        concept28: "Material created and distributed in digital format, such as images, videos, and posts.",
+
+        concept29: "Application of advanced technologies to improve the protection of people and assets.",
+
+        concept30: "Period between the detection of an incident and the action taken."
     }
 };
 

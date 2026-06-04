@@ -13,6 +13,7 @@
     display:flex;
     align-items:center;
     justify-content:center;
+    position: relative;
 }
 
 @keyframes zoomBanner{
@@ -43,6 +44,7 @@
     display:flex;
     gap:20px;
     flex-wrap:wrap;
+    position: relative;
 }
 
 .conference-card{
@@ -51,7 +53,7 @@
     flex-direction:column;
     background:rgba(255,255,255,.05);
     border-radius:15px;
-    overflow:hidden;
+  
     border:1px solid rgba(255,255,255,.08);
     transition: all .3s ease;
     flex-grow: 1;
